@@ -1,12 +1,10 @@
 import "./MainDescription.css"
-//icons
-import { FaImage } from 'react-icons/fa';
 
 function MainDescription(props) {
     return ( 
         <div className="description-item-box">
             <div className="descriptions-item-box-icon">
-                <FaImage className="icon-description"/>
+                {props.icon}
             </div>
             <div className="descriptions-item-box-title">
                 <h2>{props.h2}</h2>

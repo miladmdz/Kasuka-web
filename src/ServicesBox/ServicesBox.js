@@ -1,14 +1,13 @@
 import "./ServicesBox.css"
 
 // icons
-import { FaBaseballBall } from 'react-icons/fa'
 
 function ServicesBox(props) {
     return ( 
         <div className="services-box">
                 <div className="services-box-holder">
                     <div className="services-box-icon">
-                        <FaBaseballBall className="icon-services"/>
+                        {props.icon}
                     </div>
                     <div className="services-box-text">
                         <h4>

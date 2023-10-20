@@ -6,7 +6,7 @@ function TeamBox(props) {
         <div className="team-box">
             <div className="team-box-holder">
                 <div className="team-box-img">
-                    <img src="./images/Capture19.PNG" alt="" />
+                    <img src={props.src} alt="" />
                 </div>
                 <div className="team-box-text">
                     <h4>{props.title}</h4>

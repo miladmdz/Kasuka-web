@@ -8,12 +8,12 @@ function PhotoMain() {
             <div className="container">
                 <div className="holder-photo-main">
                 <div className="photo-main-p1">
+                    <img src="./images/Capture23.png" alt="" />
+                    <img src="./images/Capture24.png" alt="" />
+                    <img src="./images/Capture25.png" alt="" />
                     <img src="./images/Capture4.png" alt="" />
-                    <img src="./images/Capture4.png" alt="" />
-                    <img src="./images/Capture4.png" alt="" />
-                    <img src="./images/Capture4.png" alt="" />
-                    <img src="./images/Capture4.png" alt="" />
-                    <img src="./images/Capture4.png" alt="" />
+                    <img src="./images/Capture26.png" alt="" />
+                    <img src="./images/Capture27.png" alt="" />
                 </div>
                 <div className="photo-main-p2">
                     <FaCircle className="icon-circle"/>
