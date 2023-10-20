@@ -1,0 +1,60 @@
+.holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+}
+.first-h2,.en{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+}
+.first-h2{
+    margin-top: 65px;
+    max-width: 450px;
+    text-align: center;
+
+}
+.en{
+    color: #ffc451;
+}
+.holder>p{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+@media only screen and ( max-width:1200px){
+    .container{
+        max-width: 960px;
+    }
+    .first-h2{
+        max-width: 620px;
+    }
+    .holder>p{
+        margin-top: 10px;
+    }
+
+  }
+  @media only screen and ( max-width:992px){
+    .container{
+      max-width: 960px;
+    }
+  }
+  @media only screen and ( max-width:768px){
+    .container{
+      max-width: 540px;
+    }
+    .first-h2, .en {
+      font-size: 37px;
+    }
+    .holder>p {
+      font-size: 23px;
+    }
+  }
+  @media only screen and ( max-width:576px){
+    .container{
+      max-width: 100%;
+     
+    }
+  }

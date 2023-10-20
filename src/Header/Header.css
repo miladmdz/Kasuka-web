@@ -1,0 +1,117 @@
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.container{
+    max-width: 80rem;
+    padding: 0 4rem;
+}
+.icon-list-hamber{
+    color: white;
+    font-size: 25px;
+    margin-right: 5px;
+    display: none;
+}
+.holder-header{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.header-holder{
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+}
+.holder-icon-and-text{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.holder-icon-and-text>p>a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.img{
+    max-width: 65px;
+}
+.ul-header{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+.ul-header>li{
+    padding: 12px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.li-header:first-child{
+    color: #ffc451;
+}
+.ul-header>li:hover{
+    color: #ffc451;
+}
+.holder-header>button{
+    outline: none;
+    border: 3px solid #ffc451;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    background-color: inherit;
+}
+.holder-header>button:hover{
+    background-color: #ffc451;
+    color: black;
+}
+/*___________responsive_____________*/
+@media only screen and ( max-width:1200px){
+    .container{
+        max-width: 960px;
+    }
+  }
+  @media only screen and ( max-width:992px){
+    .container{
+      max-width: 960px;
+    }
+    .icon-list-hamber{
+        display: block;
+    }
+    .ul-header{
+        display: none;
+    }
+    .holder-header{
+        justify-content: flex-start;
+    }
+    .holder-header>button{
+        margin-right: 10px;
+    }
+    .img{
+        max-height: 40px;
+    }
+  }
+  @media only screen and ( max-width:768px){
+    .container{
+      max-width: 540px;
+    }
+  }
+  @media only screen and ( max-width:576px){
+    .container{
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+    .first-h2{
+        font-size: 29px;
+    }
+    .holder>p{
+        text-align: center;
+    }
+  }

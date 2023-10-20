@@ -1,0 +1,72 @@
+.slider-explainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider-explainer-part1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider-explainer-part1-img>img{
+    max-width: 80px;
+    border: 5px solid #929292;
+    border-radius: 100%;
+}
+.slider-explainer-part1-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slider-explainer-part1-title>p{
+    margin: 0;
+    color: #ddd;
+    font-weight: 700;
+}
+.slider-explainer-part1-title>h2{
+    color: white;
+    margin: 0 0 10px 0;
+}
+.slider-explainer-icon{
+    color: #ddd;
+    font-size: 25px;
+}
+.slider-explainer-part2>p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+/*___________responsive_____________*/
+@media only screen and ( max-width:1200px){
+    .container{
+        max-width: 960px;
+    }
+    .slider-explainer{
+        max-width: 712px;
+    }
+    .slider-explainer-part2>p{
+        font-size: 15px;
+    }
+  }
+  @media only screen and ( max-width:992px){
+    .container{
+      max-width: 960px;
+    }
+    .slider-explainer-icon{
+      font-size: 19px;
+    }
+  }
+  @media only screen and ( max-width:768px){
+    .container{
+      max-width: 540px;
+    }
+  }
+  @media only screen and ( max-width:576px){
+    .container{
+      max-width: 100%;
+     
+    }
+  }

@@ -1,0 +1,87 @@
+.holder-main-top{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.main-top-text{
+ max-width: 600px;   
+ margin-left: 50px;
+ display: flex;
+ flex-direction: column;
+
+
+}
+.main-top-text>h2{
+    color: #444444;
+    font-size: 28px;
+    font-weight: 700;
+}
+.main-top-text>p{
+    color: #444444;
+    font-weight: 700;
+    font-size: 15px;
+}
+.main-top-img>img{
+    max-width: 600px;
+}
+.icon-tik{
+    color: #ffc451;
+    font-size: 15px;
+}
+@media only screen and ( max-width:1200px){
+    .container{
+        max-width: 960px;
+    }
+    .main-top-img>img{
+        max-width: 465px;
+    }
+    .main-top-text>h2{
+        margin: 0px;
+    }
+    .main-top-text>p{
+        margin-top: 5px;
+    }
+    .main-top-text{
+     max-width: 655px;
+    margin-left: 10px;
+    min-width: 426px;
+    }
+  }
+  @media only screen and ( max-width:992px){
+    .container{
+      max-width: 960px;
+    }
+    .holder-main-top{
+      display: flex;
+      flex-direction: column;
+    }
+    .main-top-img{
+      display: flex;
+      order: 0;
+    }
+    .main-top-text{
+      order: 1;
+      margin-top: 10px;
+    }
+
+  }
+  @media only screen and ( max-width:768px){
+    .container{
+      max-width: 540px;
+    }
+  }
+  @media only screen and ( max-width:576px){
+    .container{
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+    .main-top-text{
+      min-width: fit-content;
+    }
+    .main-top-text>h2{
+      max-width:100%;
+    }
+    .main-top-text>p{
+      max-width:100%;
+    }
+  }

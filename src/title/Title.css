@@ -1,0 +1,43 @@
+.services-title-h2{
+    color: #aaaaaa;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .services-title-h2::after{
+    content: "";
+      width: 120px;
+      height: 1px;
+      display: inline-block;
+      background: #ffde9e;
+      margin: 4px 10px;
+  }
+  .services-title-p{
+    font-size: 36px;
+    margin: 0;
+    font-weight: 700;
+  }
+  /*___________responsive_____________*/
+@media only screen and ( max-width:1200px){
+  .container{
+      max-width: 960px;
+  }
+  .services-title-p{
+    font-size: 30px;
+  }
+}
+@media only screen and ( max-width:992px){
+  .container{
+    max-width: 960px;
+  }
+}
+@media only screen and ( max-width:768px){
+  .container{
+    max-width: 540px;
+  }
+}
+@media only screen and ( max-width:576px){
+  .container{
+    max-width: 100%;
+   
+  }
+}

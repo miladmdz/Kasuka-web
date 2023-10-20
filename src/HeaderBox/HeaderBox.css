@@ -1,0 +1,68 @@
+.header-box{
+    display: inline-block;
+    padding: 40px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.548);
+    transition: all 200ms;
+}
+.header-box:hover{
+    border: 1px solid #ffc451;
+}
+.holder-header-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    color: #ffc451;
+    font-size: 30px;
+}
+.text-header-box>a{
+    text-decoration: none;
+    color: white;
+    transition: all 200ms;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-header-box>a:hover{
+    color: #ffc451;
+}
+.text-header-box{
+    margin: 10px 0;
+}
+/*___________responsive_____________*/
+@media only screen and ( max-width:1200px){
+    .container{
+        max-width: 960px;
+    }
+    .header-box{
+        flex-basis: 17rem;
+    }
+  }
+  @media only screen and ( max-width:992px){
+    .container{
+      max-width: 960px;
+    }
+    .header-box{
+      flex-basis: 12rem;
+  }
+  }
+  @media only screen and ( max-width:768px){
+    .container{
+      max-width: 540px;
+    }
+    .header-box{
+      flex-basis: 30rem;
+    }
+  }
+  @media only screen and ( max-width:576px){
+    .container{
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+    .header-box{
+      flex-basis: 20rem;
+    }
+  }

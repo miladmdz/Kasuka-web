@@ -1,0 +1,15 @@
+.CvList{
+    padding: 0px 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    max-width:fit-content;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.CvList:first-child{
+    background-color: #ffc451;
+}
+.CvList:hover{
+    background-color: #ffc451;
+}

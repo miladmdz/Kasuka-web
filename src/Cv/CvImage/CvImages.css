@@ -1,0 +1,110 @@
+.cv{
+    margin-top: 40px;
+  }
+  .cv-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .cv-list-images{
+    display: flex;
+    flex-direction: column;
+  }
+  .cv-images{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    flex-basis: 1;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .cv-images1,.cv-images2,.cv-images3{
+    width: 30.333333%;
+    height:max-content
+    ;
+  }
+  .cv-images1-in,.cv-images2-in,.cv-images3-in,.cv-images4-in,.cv-images5-in,.cv-images6-in,.cv-images7-in,.cv-images8-in,.cv-images9-in{
+    overflow: hidden;
+  }
+  .cv-images1-in>img,.cv-images2-in>img,.cv-images3-in>img,.cv-images4-in>img,.cv-images5-in>img,.cv-images6-in>img,.cv-images7-in>img,.cv-images8-in>img,.cv-images9-in>img{
+    width: 100%;
+    height: 100%;
+    transition: scale 400ms;
+  }
+  .cv-images1-in>h4,.cv-images2-in>h4,.cv-images3-in>h4,.cv-images4-in>h4,.cv-images5-in>h4,.cv-images6-in>h4,.cv-images7-in>h4,.cv-images8-in>h4,.cv-images9-in>h4{
+    position: absolute;
+    display: none;
+    margin: -100px 10px 0 0;
+    color: white;
+  }
+  .cv-images1-in>p,.cv-images2-in>p,.cv-images3-in>p,.cv-images4-in>p,.cv-images5-in>p,.cv-images6-in>p,.cv-images7-in>p,.cv-images8-in>p,.cv-images9-in>p{
+    position: absolute;
+    display: none;
+    margin: -70px 10px 0 0;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .cv-images1-in:hover :nth-child(n),.cv-images2-in:hover :nth-child(n),.cv-images3-in:hover :nth-child(n),.cv-images4-in:hover :nth-child(n),.cv-images5-in:hover :nth-child(n),.cv-images6-in:hover :nth-child(n),.cv-images7-in:hover :nth-child(n),.cv-images8-in:hover :nth-child(n),.cv-images9-in:hover :nth-child(n){
+    display: block;
+  }
+  .cv-images1-in:hover>img,.cv-images2-in:hover>img,.cv-images3-in:hover>img,.cv-images4-in:hover>img,.cv-images5-in:hover>img,.cv-images6-in:hover>img,.cv-images7-in:hover>img,.cv-images8-in:hover>img,.cv-images9-in:hover>img{
+    scale: 120%;
+    display: block;
+    filter: brightness(70%);
+  }
+  .icon-Cv-link{
+    position: absolute;
+    display: none;
+    margin: -40px 70px 0 0;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 200ms;
+  }
+  .icon-Cv-link:hover{
+    color: #ffc451;
+  }
+  .icon-Cv-plus{
+    position: absolute;
+    display: none;
+    margin: -40px 30px 0 0;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 200ms;
+  }
+  .icon-Cv-plus:hover{
+    color: #ffc451;
+  }
+  /*___________responsive_____________*/
+@media only screen and ( max-width:1200px){
+  .container{
+      max-width: 960px;
+  }
+
+}
+@media only screen and ( max-width:992px){
+  .container{
+    max-width: 960px;
+  }
+
+}
+@media only screen and ( max-width:768px){
+  .container{
+    max-width: 540px;
+  }
+.cv-images{
+  flex-direction: column;
+  align-items: center;
+}
+.cv-images1, .cv-images2, .cv-images3{
+  width: 100%;
+}
+}
+@media only screen and ( max-width:576px){
+  .container{
+    max-width: 100%;
+   
+  }
+}
+  
