@@ -10,10 +10,10 @@ function CvImages() {
     return ( 
         <div className="cv-list-images">
         <div className="cv-list">
-          <CvList/>
-          <CvList/>
-          <CvList/>
-          <CvList/>
+          <CvList text="همه"/>
+          <CvList text="برنامه"/>
+          <CvList text="محصول"/>
+          <CvList text="اینترنت"/>
           </div>
           <div className="cv-images">
             <div className="cv-images1">

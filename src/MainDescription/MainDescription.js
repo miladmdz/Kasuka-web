@@ -2,15 +2,15 @@ import "./MainDescription.css"
 //icons
 import { FaImage } from 'react-icons/fa';
 
-function MainDescription() {
+function MainDescription(props) {
     return ( 
         <div className="description-item-box">
             <div className="descriptions-item-box-icon">
                 <FaImage className="icon-description"/>
             </div>
             <div className="descriptions-item-box-title">
-                <h2>تبلیغ سختی است</h2>
-                <p>نتایج یا در نتیجه هر یک از این اهداف اشتغال حاصل می شوند</p>
+                <h2>{props.h2}</h2>
+                <p>{props.p}</p>
             </div>
         </div>
      );

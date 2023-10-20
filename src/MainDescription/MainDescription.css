@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 430px;
+    min-width: 0px;
+    max-width: 500px;
     margin-bottom: 0px;
 }
 .icon-description{
@@ -15,6 +16,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    min-width: 100%;
+    margin-right: 10px;
 }
 .descriptions-item-box-title>h2{
     color: #444444;

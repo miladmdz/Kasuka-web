@@ -1,7 +1,7 @@
 import "./TeamBox.css"
 
 
-function TeamBox() {
+function TeamBox(props) {
     return ( 
         <div className="team-box">
             <div className="team-box-holder">
@@ -9,8 +9,8 @@ function TeamBox() {
                     <img src="./images/Capture19.PNG" alt="" />
                 </div>
                 <div className="team-box-text">
-                    <h4>والتر وایت</h4>
-                    <p>مدیر ارشد اجرایی</p>
+                    <h4>{props.title}</h4>
+                    <p>{props.text}</p>
                 </div>
             </div>
         </div>

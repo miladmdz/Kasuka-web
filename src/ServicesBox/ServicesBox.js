@@ -3,7 +3,7 @@ import "./ServicesBox.css"
 // icons
 import { FaBaseballBall } from 'react-icons/fa'
 
-function ServicesBox() {
+function ServicesBox(props) {
     return ( 
         <div className="services-box">
                 <div className="services-box-holder">
@@ -12,9 +12,9 @@ function ServicesBox() {
                     </div>
                     <div className="services-box-text">
                         <h4>
-                            <a href="#">دردهای بزرگ</a>
+                            <a href="#">{props.title}</a>
                         </h4>
-                        <p>آنها استثنائاتی هستند که به دنبال سیاه پوستان هستند ، آنها نمی بینند ، آنها کسانی هستند که در خدمات خود مقصر هستند</p>
+                        <p>{props.text}</p>
                     </div>
                 </div>
         </div>
