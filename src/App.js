@@ -41,51 +41,66 @@ import { FaClock } from 'react-icons/fa';
 import { FaAward } from 'react-icons/fa';
 import React from "react";
 
-let allHeaderBox=[
-  {icon:<FaHome className="icon"/>,text:"متن نمایشی"},
-  {icon:<FaChartBar className="icon"/>,text:"نمودار کیفی"},
-  {icon:<FaCalendarAlt className="icon"/>,text:"نمونه کارها"},
-  {icon:<FaBrush className="icon"/>,text:"عملکرد های پایانی"},
-  {icon:<FaDatabase className="icon"/>,text:"اطلاعات ذخیره شده"},
-]
 
-let allDescriptionBox=[
-  {icon:<FaReceipt className="icon-description"/>,title:"تبلیغ سختی است",text:"نتایج یا در نتیجه هر یک از این اهداف اشتغال حاصل می شوند"},
-  {icon:<FaCube className="icon-description"/>,title:"کدام یک از اینهاست",text:"کسانی که هوس سیاهان می کنند نمی بینند ، آنها مقصر هستند که خدمات خود را رها کرده اند"},
-  {icon:<FaImage className="icon-description"/>,title:"یا کور شده است",text:"یا می پذیرد یا زمانی که هیچ کس از همه اجتناب نمی کند. همه دردهایی که آنها را بیشتر می کند"},
-  {icon:<FaShieldAlt className="icon-description"/>,title:"حقیقت مبارک",text:"آنها بدون تحمل حقیقت در زمان ستایش زندگی از هیچ چیزی پیروی نمی کنند"},
-]
-
-let allTitleBox=[
-  {title:"خدمات",text:"خدمات ما را بررسی کنید"},
-  {title:"نمونه کارها",text:"نمونه کارها ما را بررسی کنید"},
-  {title:"تیم",text:"تیم ما را بررسی کنید"},
-]
-
-let allServicesBox=[
-  {icon:<FaBaseballBall className="icon-services"/>,title:"لورم اپیسوم",text:"برای آرامش بخشیدن و لذت بردن از مفاسد ، چه دردها و چه دردسرهایی را دریافت خواهند کرد"},
-  {icon:<FaFileAlt className="icon-services"/>,title:"  مشاهده می کنید",text:"آنها استثنائاتی هستند که به دنبال سیاه پوستان هستند ، آنها نمی بینند ، آنها کسانی هستند که در خدمات خود مقصر هستند"},
-  {icon:<FaTachometerAlt className="icon-services"/>,title:"دردهای بزرگ",text:"آنها استثنائاتی هستند که به دنبال سیاه پوستان هستند ، آنها نمی بینند ، آنها کسانی هستند که در خدمات خود مقصر هستند"},
-  {icon:<FaBatteryFull className="icon-services"/>,title:"هیچکس دیگر",text:"اما در واقع ما هم آنها را متهم می کنیم و هم با یک نفرت عادلانه شایسته چاپلوسی هستیم"},
-  {icon:<FaChalkboard className="icon-services"/>,title:"لولا را پاک کنید",text:"آنها استثنائاتی هستند که به دنبال سیاه پوستان هستند ، آنها نمی بینند ، آنها کسانی هستند که در خدمات خود مقصر هستند"},
-  {icon:<FaBath className="icon-services"/>,title:"دیوا دان",text:"روشها یا تلاشهای ما علاوه بر این ، خطا فرار می کند ، بگذار کوچکتر عاقل باشد"},
-]
-
-let allDataBox=[
-  {icon:<FaSmile className="icon-datas-box"/>,num:65,text:"مشتریان خوشحال خوشحالیم که از معمار چیزی دریافت کنیم."},
-  {icon:<FaJournalWhills className="icon-datas-box"/>,num:85,text:"پروژه ها برای بدست آوردن و زمانی که او کل کسانی را که از او تعریف می کنند رد می کند و آنها را حقیر می شمارد"},
-  {icon:<FaClock className="icon-datas-box"/>,num:35,text:"سال ها تجربه یا اجازه دهید به دنبال نوعی مزیت باشد"},
-  {icon:<FaAward className="icon-datas-box"/>,num:20,text:"جوایز درد دردناک تر است در زمانی دیگر که هیچکس او را متهم نمی کند و هیچ وقت او را متهم نمی کند"},
-]
-
-let allTeamBox=[
-  {src:"./images/Capture19.PNG",title:"والتر وایت",text:"مدیر ارشد اجرایی"},
-  {src:"./images/Capture20.PNG",title:"سارا جونسون",text:"مدیر تولید"},
-  {src:"./images/Capture21.PNG",title:"ویلیام اندرسون",text:"CTO"},
-  {src:"./images/Capture22.PNG",title:"آماندا جپسون",text:"حسابدار"},
-]
 class App extends React.Component {
-
+constructor(props){
+  super(props)
+   this.allHeaderBox={
+    data:[
+    {icon:<FaHome className="icon"/>,text:"متن نمایشی"},
+    {icon:<FaChartBar className="icon"/>,text:"نمودار کیفی"},
+    {icon:<FaCalendarAlt className="icon"/>,text:"نمونه کارها"},
+    {icon:<FaBrush className="icon"/>,text:"عملکرد های پایانی"},
+    {icon:<FaDatabase className="icon"/>,text:"اطلاعات ذخیره شده"},
+    ]
+    }
+  
+  this.allDescriptionBox={
+   data:[
+    {icon:<FaReceipt className="icon-description"/>,title:"تبلیغ سختی است",text:"نتایج یا در نتیجه هر یک از این اهداف اشتغال حاصل می شوند"},
+    {icon:<FaCube className="icon-description"/>,title:"کدام یک از اینهاست",text:"کسانی که هوس سیاهان می کنند نمی بینند ، آنها مقصر هستند که خدمات خود را رها کرده اند"},
+    {icon:<FaImage className="icon-description"/>,title:"یا کور شده است",text:"یا می پذیرد یا زمانی که هیچ کس از همه اجتناب نمی کند. همه دردهایی که آنها را بیشتر می کند"},
+    {icon:<FaShieldAlt className="icon-description"/>,title:"حقیقت مبارک",text:"آنها بدون تحمل حقیقت در زمان ستایش زندگی از هیچ چیزی پیروی نمی کنند"},
+   ]
+    }
+  
+  this.allTitleBox={
+    data:[
+    {title:"خدمات",text:"خدمات ما را بررسی کنید"},
+    {title:"نمونه کارها",text:"نمونه کارها ما را بررسی کنید"},
+    {title:"تیم",text:"تیم ما را بررسی کنید"},
+    ]
+    }
+  
+  this.allServicesBox={
+   data:[
+    {icon:<FaBaseballBall className="icon-services"/>,title:"لورم اپیسوم",text:"برای آرامش بخشیدن و لذت بردن از مفاسد ، چه دردها و چه دردسرهایی را دریافت خواهند کرد"},
+    {icon:<FaFileAlt className="icon-services"/>,title:"  مشاهده می کنید",text:"آنها استثنائاتی هستند که به دنبال سیاه پوستان هستند ، آنها نمی بینند ، آنها کسانی هستند که در خدمات خود مقصر هستند"},
+    {icon:<FaTachometerAlt className="icon-services"/>,title:"دردهای بزرگ",text:"آنها استثنائاتی هستند که به دنبال سیاه پوستان هستند ، آنها نمی بینند ، آنها کسانی هستند که در خدمات خود مقصر هستند"},
+    {icon:<FaBatteryFull className="icon-services"/>,title:"هیچکس دیگر",text:"اما در واقع ما هم آنها را متهم می کنیم و هم با یک نفرت عادلانه شایسته چاپلوسی هستیم"},
+    {icon:<FaChalkboard className="icon-services"/>,title:"لولا را پاک کنید",text:"آنها استثنائاتی هستند که به دنبال سیاه پوستان هستند ، آنها نمی بینند ، آنها کسانی هستند که در خدمات خود مقصر هستند"},
+    {icon:<FaBath className="icon-services"/>,title:"دیوا دان",text:"روشها یا تلاشهای ما علاوه بر این ، خطا فرار می کند ، بگذار کوچکتر عاقل باشد"},
+   ]
+    }
+  
+  this.allDataBox={
+   data:[
+    {icon:<FaSmile className="icon-datas-box"/>,num:65,text:"مشتریان خوشحال خوشحالیم که از معمار چیزی دریافت کنیم."},
+    {icon:<FaJournalWhills className="icon-datas-box"/>,num:85,text:"پروژه ها برای بدست آوردن و زمانی که او کل کسانی را که از او تعریف می کنند رد می کند و آنها را حقیر می شمارد"},
+    {icon:<FaClock className="icon-datas-box"/>,num:35,text:"سال ها تجربه یا اجازه دهید به دنبال نوعی مزیت باشد"},
+    {icon:<FaAward className="icon-datas-box"/>,num:20,text:"جوایز درد دردناک تر است در زمانی دیگر که هیچکس او را متهم نمی کند و هیچ وقت او را متهم نمی کند"},
+   ]
+    }
+  
+  this.allTeamBox={
+   data:[
+    {src:"./images/Capture19.PNG",title:"والتر وایت",text:"مدیر ارشد اجرایی"},
+    {src:"./images/Capture20.PNG",title:"سارا جونسون",text:"مدیر تولید"},
+    {src:"./images/Capture21.PNG",title:"ویلیام اندرسون",text:"CTO"},
+    {src:"./images/Capture22.PNG",title:"آماندا جپسون",text:"حسابدار"},
+   ]
+    }
+}
 render(){
   return (
     <div className="App">
@@ -94,11 +109,11 @@ render(){
 
       <Headertext/>
         <div className="holder-icons">
-          <Headerbox {...allHeaderBox[0]}/>
-          <Headerbox {...allHeaderBox[1]}/>
-          <Headerbox {...allHeaderBox[2]}/>
-          <Headerbox {...allHeaderBox[3]}/>
-          <Headerbox {...allHeaderBox[4]}/>
+          <Headerbox {...this.allHeaderBox.data[0]}/>
+          <Headerbox {...this.allHeaderBox.data[1]}/>
+          <Headerbox {...this.allHeaderBox.data[2]}/>
+          <Headerbox {...this.allHeaderBox.data[3]}/>
+          <Headerbox {...this.allHeaderBox.data[4]}/>
         </div>
  
         </div>
@@ -115,24 +130,24 @@ render(){
               <img src="./images/Capture5.PNG" alt="" />
             </div>
             <div className="description-box">
-              <MainDescription {...allDescriptionBox[0]}/>
-              <MainDescription {...allDescriptionBox[1]}/>
-              <MainDescription {...allDescriptionBox[2]}/>
-              <MainDescription {...allDescriptionBox[3]}/>
+              <MainDescription {...this.allDescriptionBox.data[0]}/>
+              <MainDescription {...this.allDescriptionBox.data[1]}/>
+              <MainDescription {...this.allDescriptionBox.data[2]}/>
+              <MainDescription {...this.allDescriptionBox.data[3]}/>
             </div>
           </div>
         </div>
       </div>
       <div className="services">
         <div className="container">
-          <Title {...allTitleBox[0]}/>
+          <Title {...this.allTitleBox.data[0]}/>
           <div className="services-box">
-            <ServicesBox {...allServicesBox[0]}/>
-            <ServicesBox {...allServicesBox[1]}/>
-            <ServicesBox {...allServicesBox[2]}/>
-            <ServicesBox {...allServicesBox[3]}/>
-            <ServicesBox {...allServicesBox[4]}/>
-            <ServicesBox {...allServicesBox[5]}/>
+            <ServicesBox {...this.allServicesBox.data[0]}/>
+            <ServicesBox {...this.allServicesBox.data[1]}/>
+            <ServicesBox {...this.allServicesBox.data[2]}/>
+            <ServicesBox {...this.allServicesBox.data[3]}/>
+            <ServicesBox {...this.allServicesBox.data[4]}/>
+            <ServicesBox {...this.allServicesBox.data[5]}/>
           </div>
         </div>
       </div>
@@ -149,7 +164,7 @@ render(){
       </div>
       <div className="cv">
         <div className="container">
-          <Title {...allTitleBox[1]}/>
+          <Title {...this.allTitleBox.data[1]}/>
          <CvImages/>
         </div>
       </div>
@@ -163,10 +178,10 @@ render(){
                 <p>خود درد ممکن است درد زیادی باشد ، اما دلیل اصلی آن درد است ، اما من به آن زمان می دهم تا مانند یک درد و درد بزرگ در آن فرو برود. درد مقصر است</p>
               </div>
               <div className="datas-text-2">
-                <DatasBox {...allDataBox[0]}/>
-                <DatasBox {...allDataBox[1]}/>
-                <DatasBox {...allDataBox[2]}/>
-                <DatasBox {...allDataBox[3]}/>
+                <DatasBox {...this.allDataBox.data[0]}/>
+                <DatasBox {...this.allDataBox.data[1]}/>
+                <DatasBox {...this.allDataBox.data[2]}/>
+                <DatasBox {...this.allDataBox.data[3]}/>
              </div>
             </div>
           </div>
@@ -192,12 +207,12 @@ render(){
       </div>
       <div className="team">
         <div className="container">
-        <Title {...allTitleBox[2]}/>
+        <Title {...this.allTitleBox.data[2]}/>
         <div className="team-holder">
-        <TeamBox {...allTeamBox[0]}/>
-        <TeamBox {...allTeamBox[1]}/>
-        <TeamBox {...allTeamBox[2]}/>
-        <TeamBox {...allTeamBox[3]}/>
+        <TeamBox {...this.allTeamBox.data[0]}/>
+        <TeamBox {...this.allTeamBox.data[1]}/>
+        <TeamBox {...this.allTeamBox.data[2]}/>
+        <TeamBox {...this.allTeamBox.data[3]}/>
         </div>
         </div>
       </div>

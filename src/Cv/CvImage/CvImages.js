@@ -7,22 +7,27 @@ import { FaLink } from 'react-icons/fa';
 import { FaPlus } from 'react-icons/fa';
 import React from "react";
 
-let allData=[
- {text:"همه"},
- {text:"برنامه"},
- {text:"محصول"},
- {text:"اینترنت"},
-]
-class CvImages extends React.Component {
 
+class CvImages extends React.Component {
+constructor(props){
+  super(props)
+   this.allData={
+    data:[
+      {text:"همه"},
+      {text:"برنامه"},
+      {text:"محصول"},
+      {text:"اینترنت"},  
+    ]
+    }
+}
   render(){
     return ( 
       <div className="cv-list-images">
       <div className="cv-list">
-        <CvList {...allData[0]}/>
-        <CvList {...allData[1]}/>
-        <CvList {...allData[2]}/>
-        <CvList {...allData[3]}/>
+        <CvList {...this.allData.data[0]}/>
+        <CvList {...this.allData.data[1]}/>
+        <CvList {...this.allData.data[2]}/>
+        <CvList {...this.allData.data[3]}/>
         </div>
         <div className="cv-images">
           <div className="cv-images1">
