@@ -62,8 +62,14 @@
       max-width: 100%;
       padding: 0 1rem;
     }
+    .description-item-box{
+      margin-right: 0;
+      justify-content: flex-start;
+    }
     .descriptions-item-box-title{
       margin-right: 5px;
+      min-width: 0;
+      max-width: 100%;
     }
     .descriptions-item-box-title>h2{
       margin:5px 0;

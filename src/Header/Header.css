@@ -67,6 +67,7 @@
     cursor: pointer;
     color: white;
     background-color: inherit;
+    transition: all 200ms;
 }
 .holder-header>button:hover{
     background-color: #ffc451;

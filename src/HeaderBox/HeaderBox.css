@@ -3,6 +3,7 @@
     padding: 40px 10px;
     border: 1px solid rgba(255, 255, 255, 0.548);
     transition: all 200ms;
+    flex-basis: 11rem;
 }
 .header-box:hover{
     border: 1px solid #ffc451;
