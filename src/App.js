@@ -58,6 +58,12 @@ function App() {
     {icon:<FaShieldAlt className="icon-description"/>,title:"حقیقت مبارک",text:"آنها بدون تحمل حقیقت در زمان ستایش زندگی از هیچ چیزی پیروی نمی کنند"},
   ]
 
+  let allTitleBox=[
+    {title:"خدمات",text:"خدمات ما را بررسی کنید"},
+    {title:"نمونه کارها",text:"نمونه کارها ما را بررسی کنید"},
+    {title:"تیم",text:"تیم ما را بررسی کنید"},
+  ]
+
   let allServicesBox=[
     {icon:<FaBaseballBall className="icon-services"/>,title:"لورم اپیسوم",text:"برای آرامش بخشیدن و لذت بردن از مفاسد ، چه دردها و چه دردسرهایی را دریافت خواهند کرد"},
     {icon:<FaFileAlt className="icon-services"/>,title:"  مشاهده می کنید",text:"آنها استثنائاتی هستند که به دنبال سیاه پوستان هستند ، آنها نمی بینند ، آنها کسانی هستند که در خدمات خود مقصر هستند"},
@@ -119,7 +125,7 @@ function App() {
       </div>
       <div className="services">
         <div className="container">
-          <Title h2="خدمات" p="خدمات ما را بررسی کنید"/>
+          <Title {...allTitleBox[0]}/>
           <div className="services-box">
             <ServicesBox {...allServicesBox[0]}/>
             <ServicesBox {...allServicesBox[1]}/>
@@ -143,7 +149,7 @@ function App() {
       </div>
       <div className="cv">
         <div className="container">
-          <Title h2="نمونه کارها" p="نمونه کارها ما را بررسی کنید"/>
+          <Title {...allTitleBox[1]}/>
          <CvImages/>
         </div>
       </div>
@@ -186,7 +192,7 @@ function App() {
       </div>
       <div className="team">
         <div className="container">
-        <Title h2="تیم" p="تیم ما را بررسی کنید"/>
+        <Title {...allTitleBox[2]}/>
         <div className="team-holder">
         <TeamBox {...allTeamBox[0]}/>
         <TeamBox {...allTeamBox[1]}/>
