@@ -2,15 +2,15 @@ import "./DatasBox.css"
 
 //icons
 
-function DatasBox(props) {
+function DatasBox({icon,num,text}) {
     return ( 
         <div className="datas-box">
             <div className="datas-box-top">
-                {props.icon}
-                <h2>{props.num}</h2>
+                {icon}
+                <h2>{num}</h2>
             </div>
             <div className="datas-box-bottom">
-                <p>{props.text}</p>
+                <p>{text}</p>
             </div>
         </div>
      );

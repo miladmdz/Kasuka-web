@@ -1,14 +1,14 @@
 import "./MainDescription.css"
 
-function MainDescription(props) {
+function MainDescription({icon,title,text}) {
     return ( 
         <div className="description-item-box">
             <div className="descriptions-item-box-icon">
-                {props.icon}
+                {icon}
             </div>
             <div className="descriptions-item-box-title">
-                <h2>{props.h2}</h2>
-                <p>{props.p}</p>
+                <h2>{title}</h2>
+                <p>{text}</p>
             </div>
         </div>
      );

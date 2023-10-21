@@ -1,16 +1,16 @@
 import "./TeamBox.css"
 
 
-function TeamBox(props) {
+function TeamBox({src,title,text}) {
     return ( 
         <div className="team-box">
             <div className="team-box-holder">
                 <div className="team-box-img">
-                    <img src={props.src} alt="" />
+                    <img src={src} alt="" />
                 </div>
                 <div className="team-box-text">
-                    <h4>{props.title}</h4>
-                    <p>{props.text}</p>
+                    <h4>{title}</h4>
+                    <p>{text}</p>
                 </div>
             </div>
         </div>

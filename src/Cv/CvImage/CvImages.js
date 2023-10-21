@@ -7,13 +7,21 @@ import { FaLink } from 'react-icons/fa';
 import { FaPlus } from 'react-icons/fa';
 
 function CvImages() {
+
+  let allData=[
+    {text:"همه"},
+    {text:"برنامه"},
+    {text:"محصول"},
+    {text:"اینترنت"},
+  ]
+
     return ( 
         <div className="cv-list-images">
         <div className="cv-list">
-          <CvList text="همه"/>
-          <CvList text="برنامه"/>
-          <CvList text="محصول"/>
-          <CvList text="اینترنت"/>
+          <CvList {...allData[0]}/>
+          <CvList {...allData[1]}/>
+          <CvList {...allData[2]}/>
+          <CvList {...allData[3]}/>
           </div>
           <div className="cv-images">
             <div className="cv-images1">

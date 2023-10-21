@@ -1,9 +1,9 @@
 import "./CvList.css"
 
-function CvList(props) {
+function CvList({text}) {
     return ( 
         <div className="CvList">
-            <p>{props.text}</p>
+            <p>{text}</p>
         </div>
      );
 }

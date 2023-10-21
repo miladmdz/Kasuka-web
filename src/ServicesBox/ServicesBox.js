@@ -2,18 +2,18 @@ import "./ServicesBox.css"
 
 // icons
 
-function ServicesBox(props) {
+function ServicesBox({icon,title,text}) {
     return ( 
         <div className="services-box">
                 <div className="services-box-holder">
                     <div className="services-box-icon">
-                        {props.icon}
+                        {icon}
                     </div>
                     <div className="services-box-text">
                         <h4>
-                            <a href="#">{props.title}</a>
+                            <a href="#">{title}</a>
                         </h4>
-                        <p>{props.text}</p>
+                        <p>{text}</p>
                     </div>
                 </div>
         </div>
