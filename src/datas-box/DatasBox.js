@@ -1,19 +1,20 @@
+import React from "react";
 import "./DatasBox.css"
 
-//icons
-
-function DatasBox({icon,num,text}) {
+class DatasBox extends React.Component {
+   render(){
     return ( 
         <div className="datas-box">
             <div className="datas-box-top">
-                {icon}
-                <h2>{num}</h2>
+                {this.props.icon}
+                <h2>{this.props.num}</h2>
             </div>
             <div className="datas-box-bottom">
-                <p>{text}</p>
+                <p>{this.props.text}</p>
             </div>
         </div>
      );
+   }
 }
 
 export default DatasBox;

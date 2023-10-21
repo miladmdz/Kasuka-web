@@ -1,3 +1,4 @@
+import React from "react";
 import "./FooterTop.css"
 
 //icons
@@ -9,7 +10,8 @@ import { FaTwitter } from 'react-icons/fa';
 import { FaChevronLeft } from 'react-icons/fa';
 
 
-function FooterTop() {
+class FooterTop extends React.Component {
+   render(){
     return ( 
         <div className="footer-holder">
             <div className="footer-part1">
@@ -71,6 +73,7 @@ function FooterTop() {
             <div className="footer-part2"></div>
         </div>
      );
+   }
 }
 
 export default FooterTop;

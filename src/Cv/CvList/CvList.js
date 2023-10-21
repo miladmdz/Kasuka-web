@@ -1,11 +1,14 @@
+import React from "react";
 import "./CvList.css"
 
-function CvList({text}) {
+class CvList extends React.Component {
+  render(){
     return ( 
         <div className="CvList">
-            <p>{text}</p>
+            <p>{this.props.text}</p>
         </div>
      );
+  }
 }
 
 export default CvList;
